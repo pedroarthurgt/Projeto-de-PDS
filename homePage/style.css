@@ -1,0 +1,55 @@
+body {
+    margin: 0;
+    display: flexbox;
+    background-color: coral;
+}
+
+h1 {
+    font-size: 40px;
+    background-color: palegoldenrod;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    position: relative;
+    background-color: burlywood;
+    font-size: 25px;
+    display: block;
+    padding: 20px 10px;
+}
+
+a {
+    display: block;
+}
+
+th, td {
+    padding: 0px 10px;
+    border: solid;
+    border-color: chocolate;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.content {
+    padding: 20px 20px;
+    margin: 20px 20px;
+    background-color: burlywood;
+    width: 30%;
+    height: 300px;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    height: 1080px;
+}
+
+#relatorios {
+    font-size: 25px;
+}
