@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            margin: 0;
+            display: flexbox;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-image: repeating-linear-gradient(0deg, #33A4EB, #33A4EB 40px, #346BEB 40px, #346BEB 80px) ;
+            color: white;
+        }
+
+        #page-title {
+            justify-self: center;
+            background-color: #2d54b6;
+            margin: 0 0;
+            height: 55px;
+        }
+
+        #submit {
+            background-color: #33A4EB;
+        }
+
+        .inputs {
+            justify-self: center;
+            display: flex;
+            flex-flow: column;
+            gap: 40px;
+            width: 300px;
+        }
+
+        .input {
+            display: flex;
+            flex-flow: column;
+            justify-content: center;
+        }
+
+        h1 {
+            width: 100%;
+            text-align: center;
+            background-color: #346BEB;
+            margin: 0;
+            margin-top: 70px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+
+        form {
+            background-color: #346BEB;
+            padding: 20px;
+            padding-bottom: 50px;
+        }
+
+        input, select {
+            padding: 8px 5px;
+            font-size: 18px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        label {
+            font-size: 25px;
+            text-align: left;
+            display: block;
+            margin-bottom: 7px;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 id="page-title">Tela de login</h1>
+    <form>
+        <div class="inputs">
+            <div class="input">
+                <label for="email">Email</label>
+                <input type="email" id="email" required></button>
+            </div>
+            <div class="input">
+                <label for="senha">Senha</label>
+                <input type="password" id="senha" required>
+            </div>
+            <div class="input">
+                <label for="cargo">Cargo</label>
+                <select id="cargo" required>
+                    <option value="lider">Líder</option>
+                    <option value="pastor">Pastor</option>
+                    <option value="pastor-presidente">Pastor presidente</option>
+                    <option value="admin">Admnistrador</option>
+                </select>
+            </div>
+            <div class="input">
+                <input type="submit" id="submit">
+            </div>
+        </div>
+    </form>
+    <div class="page-final">
+        
+    </div>
+</body>
+</html>

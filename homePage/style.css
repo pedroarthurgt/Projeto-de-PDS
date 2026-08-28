@@ -1,24 +1,31 @@
 body {
     margin: 0;
     display: flexbox;
-    background-color: coral;
+    background-color: white;
 }
 
 h1 {
     font-size: 40px;
-    background-color: palegoldenrod;
+    background-color: darkslategray;
     width: 100%;
     margin: 0;
     text-align: center;
+    color: white;
 }
 
 nav {
     float: left;
     position: relative;
-    background-color: burlywood;
+    background-color: darkslategray;
     font-size: 25px;
     display: block;
     padding: 20px 10px;
+    border: solid;
+    border-top: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+    border-color: lightgray;
+    border-width: 10px;
 }
 
 a {
