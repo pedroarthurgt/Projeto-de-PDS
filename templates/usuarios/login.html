@@ -8,7 +8,8 @@
 <link rel="stylesheet" href="{% static 'css/style.css' %}">
 </head>
 <body class="body-login">
-    <form class="form-login">
+    <form class="form-login" method="POST" action="{% url 'login' %}">
+        {% csrf_token %}
         <div class="img-login">
             <img src="{% static 'img/SAMIBB.png' %}" alt="logo">
         </div>
