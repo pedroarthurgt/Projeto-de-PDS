@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de membro</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <form class="form-cadastro">
+        <div class="input">
+            <label for="nome">Nome</label>
+            <input type="text" id="usuario" placeholder="Nome completo" required>
+        </div>
+        <div class="input">
+            <label for="contato">Telefone</label>
+            <input type="tel" id="contato" placeholder="(00) 00000-0000" required>
+        </div>
+        <div class="input">
+            <label for="data-nascimento">Idade</label>
+            <input type="date" id="data-nascimento" required>
+        </div>
+        <div class="input">
+            <label for="data-novonasc">Conversão</label>
+            <input type="date" id="data-novonasc" required>
+        </div>
+        <div class="input">
+            <label for="celula">Célula</label>
+            <select id="celula" required>
+                <option value="celula">Célula x</option>
+            </select>
+        </div>
+        <div class="input">
+            <label for="endereço">Endereço</label>
+            <input type="text" id="Endereço" required>
+        </div>
+        
+    </form>
+</body>
+</html>

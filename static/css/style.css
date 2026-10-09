@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+
+/*Dashboard*/
+.body-dashboard {
+    margin: 0;
+    display: flex;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-size: 40px;
+    background-color: darkslategray;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+nav {
+    float: left;
+    position: relative;
+    background-color: darkslategray;
+    font-size: 25px;
+    display: block;
+    padding: 20px 10px;
+    border: solid;
+    border-top: 0px;
+    border-left: 0px;
+    border-bottom: 0px;
+    border-color: lightgray;
+    border-width: 10px;
+}
+
+a {
+    display: block;
+}
+
+th, td {
+    padding: 0px 10px;
+    border: solid;
+    border-color: chocolate;
+}
+
+.info {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.content {
+    padding: 20px 20px;
+    margin: 20px 20px;
+    background-color: burlywood;
+    width: 30%;
+    height: 300px;
+}
+.container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    height: 1080px;
+}
+
+#relatorios {
+    font-size: 25px;
+}
+
+
+/*Tela de login*/
+.body-login{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 8%;
+}
+
+.inputs-login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.img-login{
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto 20px auto;
+}
+
+.img-login img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.form-login {
+    max-width: 386px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 50%;
+    width: 100%;
+}
+
+input, select {
+    border-radius: 8px;
+    border: 1px solid black;
+    font-size: 18px;
+    padding: 5px 5px;
+    width: 100%;
+    background-color: white;
+}
+
+.submit{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    width: 90%;
+}
+
+.input{
+    width: 90%;
+}
+
+#submit{
+    cursor: pointer;
+    background-image: linear-gradient(rgb(255, 193, 78), rgb(255, 57, 57));
+    border-radius: 20px;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    padding-top: 5px;
+}
+
