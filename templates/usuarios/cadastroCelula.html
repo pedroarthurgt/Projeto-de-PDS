@@ -7,17 +7,19 @@
     <title>Cadastro de célula</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="body-cadastro">
+
     <h1 class="h1-cadastro-celula">Cadastro de células</h1>
     <form class="form-cadastro">
         <div class="inputs-cadastro">
             <div class="input">
                 <label for="nome">Nome</label>
-                <input type="text" id="usuario" placeholder="Nome completo" required>
+                <input type="text" id="usuario" placeholder="Nome da célula" required>
             </div>
             <div class="input">
-                <label for="contato">Telefone</label>
-                <input type="tel" id="contato" placeholder="(00) 00000-0000" required>
+               <label for="celula">Selecione a célula</label>
+                <select id="celula" required>
+                    <option value="celula">Célula x</option>
+                </select>
             </div>
             <div class="input">
                 <label for="data-nascimento">Idade</label>
@@ -26,12 +28,6 @@
             <div class="input">
                 <label for="data-novonasc">Conversão</label>
                 <input type="date" id="data-novonasc" required>
-            </div>
-            <div class="input">
-                <label for="celula">Célula</label>
-                <select id="celula" required>
-                    <option value="celula">Célula x</option>
-                </select>
             </div>
             <div class="input">
                 <label for="endereço">Endereço</label>
