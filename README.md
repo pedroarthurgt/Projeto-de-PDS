@@ -2,7 +2,7 @@ Seja bem-vindo ao SAMMIBB! O Sistena de Análise e Monitoramento de Membros da I
 Se você deseja implementar esse programa para a sua igreja, o projeto é Open Source.
 Para rodar o projeto no seu computador, siga os seguintes passos:
 1. Tenha o VS CODE instalado;
-2. Abra o terminal e digite o comando "git clone https://github.com/Everton4814/Samibb";
+2. Abra o terminal e digite o comando "git clone https://github.com/pedroarthurgt/Projeto-de-PDS";
 3. Depois de verificar que os arquivos estão corretos, continue no terminal;
 4. Escreva o comando "python -m venv ./venv" para criar o seu ambiente virtual;
 5. Depois de criar o ambiente virtual, é necessário ativá-lo usando o comando ".\venv\Scripts\activate";
