@@ -1,0 +1,32 @@
+{% extends base.html %}
+
+<head>
+    <title>Cadastro de célula</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+    <h1 class="h1-cadastro-celula">Cadastro de células</h1>
+    <form class="form-cadastro">
+        <div class="inputs-cadastro">
+            <div class="input">
+               <label for="celula">Selecione a célula</label>
+                <select id="celula">
+                    <option value="celula">Célula x</option>
+                </select>
+            </div>
+            <div class="input" hidden>
+                <label for="nome">Nome</label>
+                <input type="text" id="usuario" placeholder="Nome da célula" required>
+            </div>
+            <div class="input">
+                <label for="endereço">Endereço</label>
+                <input type="text" id="Endereço" placeholder="Digite o endereço da célula" required>
+            </div>
+            <div class="submit">
+                 <input type="submit" id="submit" value="Cadastrar célula" >
+            </div>
+        </div>
+    </form>
+</body>
+</html>
