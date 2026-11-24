@@ -16,11 +16,14 @@ class Celula(models.Model):
     @classmethod
     def criar(cls, nome, numero, lider):
         celula = cls(nome=nome, numero=numero, lider=lider)
+        return celula
     
-    @classmethod
-    def multiplicarCelula(self):
-        celula = Celula(self.nome, self.numero+1, self.lider)
-
     @classmethod
     def mudarLider(self, lider):
         self.lider = lider
+        self.save()
+
+    @classmethod
+    def deletar(self):
+        self.delete()
+        return True
