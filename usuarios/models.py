@@ -4,8 +4,11 @@ from django.db import models
 from datetime import date, datetime
 
 class Usuario(models.Model):
-    nomeUsuario = models.CharField(max_length=30)
+    nomeUsuario = models.CharField(max_length=30, primary_key=True)
     senha = models.CharField(max_length=20)
+
+    class Meta:
+        abstract=True
 
     @classmethod
     def criar(cls, nomeUsuario, senha):
@@ -22,7 +25,7 @@ class Membro(models.Model):
     dataNascimento = models.DateField
     batizado = models.BooleanField
     congregacao = models.CharField(max_length=30)
-    celula = models.ForeignKey('celulas.Celula')
+    celula = models.ForeignKey('celulas.Celula', on_delete=models.SET_NULL, null=True)
     dataCelula = models.DateField
     frequencia = models.IntegerField
 
