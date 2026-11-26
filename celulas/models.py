@@ -1,10 +1,10 @@
 from django.db import models
-
+from copy import deepcopy
 # Create your models here.
 class Celula(models.Model):
     nome = models.CharField(max_length=20)
     numero = models.IntegerField()  
-    lider = models.ForeignKey('usuarios.Lider', on_delete=models.SET_NULL, related_name='celulas_lideradas', null=True)
+    lider = models.ForeignKey('pessoas.Lider', on_delete=models.SET_NULL, related_name='celulas_lideradas', null=True)
 
     class Meta:
         constraints = [
@@ -18,12 +18,28 @@ class Celula(models.Model):
         celula = cls(nome=nome, numero=numero, lider=lider)
         return celula
     
-    @classmethod
     def mudarLider(self, lider):
         self.lider = lider
         self.save()
 
-    @classmethod
     def deletar(self):
         self.delete()
         return True
+
+    def adicionar(self):
+        self.save()
+        return True
+
+    def procurarPorNome(nome):
+        celula = Celula.objects.filter(nome__icontains=nome)
+        return celula
+
+    def procurarPorNomeNumero(nome, numero):
+        celula = Celula.objects.filter(nome__icontains=nome)
+        celula = celula.filter(numero__icontains=numero)
+        return celula
+
+    def multiplicarCelula(self):
+        novaCelula = deepcopy(self)
+        novaCelula['numero']+=1
+        novaCelula.save()
