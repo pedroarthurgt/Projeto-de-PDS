@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login
-from .models import Membro, Lider, Pastor, Admnistrador
+from .models import Membro, Lider, Pastor, Admnistrador, Usuario
 
 # Create your views here.
 def login_view(request):
@@ -58,5 +58,12 @@ def cadastroMembro(request):
     if request.method == 'POST':
         nome=request.POST.get("nome")
         dataNascimento=request.POST.get("dataNascimento")
+        batizado = request.POST.get("batizado")
+        congregacao = request.POST.get("congregacao")
+        celula = request.POST.get("celula")
+        dataCelula=request.POST.get("dataCelula")
+        frequencia=request.POST.get("frequencia")
+        membro = Membro.criar(nome, dataNascimento, batizado, congregacao, celula, dataCelula, frequencia)
+        membro.adicionarMembro()
         
     return render(request, 'usuarios/cadastroMembro.html')
